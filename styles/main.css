@@ -137,10 +137,19 @@ section.container-grid {
     height: 40vh;
     overflow: hidden;
 }
+@keyframes img-filter {
+    0% {filter: grayscale(100%);}
+    100% {filter: none;}
+}
 .img-item img{
     width: 100%;
     object-fit: cover;
     filter: grayscale(100%);
+}
+.img-item:hover img{
+    animation-name: img-filter;
+    animation-duration: .5s;
+    filter: none;
 }
 .square-black {
     background: var(--black);
