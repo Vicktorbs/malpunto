@@ -35,6 +35,7 @@ section.container-grid {
 .img-item img{
     width: 100%;
     object-fit: cover;
+    object-position: center;
     filter: grayscale(100%);
 }
 .img-item:hover img{
