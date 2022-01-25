@@ -57,8 +57,15 @@ h4 {
 .instagram p {
     display: inline;
     margin-left: .3rem;
+    margin-top: 2rem;
 }
 .instagram-img {
-    width: 1.3rem;
+    width: 1rem;
     display: inline;
+    margin-right: .3rem;
+}
+a.instagram-link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--white);
 }
