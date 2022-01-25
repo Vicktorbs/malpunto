@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --white: #FDFEFE;
+    --black: #0e0e0e;
+    --playfair: 'Playfair Display', serif;
+    --sarabun: 'Sarabun', sans-serif;
+    --color-uno: #a45754;
+    --color-dos: #e18383;
+    --color-tres: #f3eee9;
+    --color-cuatro: #e0d5c3;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.white-side {
+    display: grid;
+}
+img {
+    width: 70%;
+    place-self: center;
+}
+.black-side {
+    background: var(--black);
+    height: 88vh;
+    display: grid;
+    color: var(--white);
+}
+.text-item {
+    place-self: center stretch;
+}
+h4 {
+    font-family: var(--playfair);
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 2rem;
+    color: var(--color-dos);
+}
+.email {
+    font-family: var(--sarabun);
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+.email-label {
+    font-family: var(--sarabun);
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    font-style: italic;
+}
+.instagram {
+    margin: 2rem;
+}
+.instagram p {
+    display: inline;
+    margin-left: .3rem;
+}
+.instagram-img {
+    width: 1.3rem;
+    display: inline;
+}
