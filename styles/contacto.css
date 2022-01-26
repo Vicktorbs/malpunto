@@ -69,3 +69,17 @@ a.instagram-link {
     text-decoration: none;
     color: var(--white);
 }
+@media (max-width: 540px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    .white-side {
+        height: 50vh;
+    }
+    .black-side {
+        height: 50vh;
+    }
+    h4 {
+        font-size: 3rem;
+    }
+}
