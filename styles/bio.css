@@ -52,3 +52,44 @@ img {
     font-weight: 700;
     margin-top: 9rem;
 }
+@media (max-width: 1140px) {
+    section{
+        width: 100%;
+        margin: 0;
+        gap: 0;
+    }
+}
+@media (max-width: 992px) {
+    section {
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 0;
+    }
+    .img-fer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: .8rem;
+    }
+    .img-malpunto {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: .8rem;
+    }
+    .text-article {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .text-container {
+        height: 100%;
+        padding: 2rem 2rem;
+    }
+    .greet {
+        margin-top: 4rem;
+    }
+}

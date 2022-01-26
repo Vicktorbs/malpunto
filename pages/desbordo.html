@@ -18,34 +18,35 @@
 </head>
 <body>
     <nav>
-        <!-- <img src="./icons/icon_menu.svg" alt="menu" class="menu"> -->
-
         <div class="navbar-left">
             <a href="/" class="logo-container">
                 <img src="../img/Maalpunto-Blanco.png" alt="logo" class="logo">
             </a>
-            <ul>
-                <li>
+            <ul class="options" id="menu">
+                <li class="li-menu-item">
                     <a href="/">Inicio</a>
                 </li>
-                <li>
+                <li class="li-menu-item">
                     <a href="/pages/bio.html">Bio</a>
                 </li>
-                <li>
+                <li class="li-menu-item">
                     <a href="/pages/portafolio.html">Portafolio</a>
                 </li>
-                <li>
+                <li class="li-menu-item">
                     <a href="/pages/desbordo.html">Desbordo</a>
                 </li>
-                <li>
+                <li class="li-menu-item">
                     <a href="/pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
-
-        <div class="navbar-right">
+        <div class="burger" id="menu-burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
+
     <section class="image-header">
         <img src="../img/desbordo/Maalpunto1.JPG" alt="Imagen 1">
         <img src="../img/desbordo/Maalpunto2.JPG" alt="Imagen 2"><img src="../img/desbordo/Maalpunto3.JPG" alt="Imagen 3">
@@ -85,5 +86,7 @@
             </div>
         </article>
     </section>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

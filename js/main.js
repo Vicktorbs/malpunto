@@ -1,7 +1,6 @@
 const trigger = document.getElementById("menu");
 const burger = document.getElementById("menu-burger");
 let open = false;
-console.log(burger);
 
 function toggleMenu() {
     if (open) {

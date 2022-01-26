@@ -52,3 +52,21 @@ span {
     animation-duration: .5s;
     transform: scale(1.05);
 }
+@media (max-width: 1140px) {
+    .container {
+        width: 98%;
+    }
+    /* section {
+        padding: 1rem;
+    } */
+}
+@media (max-width: 720px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 540px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
