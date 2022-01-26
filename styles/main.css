@@ -39,7 +39,7 @@ section.container-grid {
     filter: grayscale(100%);
 }
 .img-item:hover img,
-.img-item::selection img {
+.img-item:active img {
     animation-name: img-filter;
     animation-duration: .5s;
     filter: none;
@@ -84,8 +84,8 @@ section.container-grid {
         height: 20vh;
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
     .frase {
         font-size: 2rem;
