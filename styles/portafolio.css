@@ -26,6 +26,7 @@ section {
 .img-item {
     border: solid 1px var(--black);
     padding: 8px;
+    background: var(--white);
 }
 img {
     width: 100%;
