@@ -38,7 +38,8 @@ section.container-grid {
     object-position: center;
     filter: grayscale(100%);
 }
-.img-item:hover img{
+.img-item:hover img,
+.img-item::selection img {
     animation-name: img-filter;
     animation-duration: .5s;
     filter: none;
@@ -46,4 +47,50 @@ section.container-grid {
 .square-black {
     background: var(--black);
     height: 100%;
+}
+@media (max-width: 992px) {
+    .img-item {
+        height: 30vh;
+        overflow: hidden;
+    }
+    .frase-container {
+        height: 30vh;
+    }
+    .frase {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 720px) {
+    .img-item {
+        height: 20vh;
+        overflow: hidden;
+    }
+    .frase-container {
+        height: 20vh;
+    }
+    .frase {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 540px) {
+    .img-item {
+        height: 20vh;
+        overflow: hidden;
+    }
+    section.container-grid {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+    .frase-container {
+        height: 20vh;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .frase {
+        font-size: 2rem;
+    }
+    .item-black {
+        display: none;
+    }
 }
